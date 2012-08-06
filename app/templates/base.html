@@ -7,11 +7,8 @@
   <meta name="author" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- CSS: implied media="all" -->
-  <link rel="stylesheet" href="/css/style.css?v=2">
-  {% block css %}{% endblock %}
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
 
-  <link rel="stylesheet" media="handheld" href="/css/handheld.css?v=2">  -->
 
   <script src="/js/libs/modernizr-1.7.min.js"></script>
 </head>
@@ -19,8 +16,21 @@
 <body>
   <div id="container">
     <header>
-      {% block header %}{% endblock %}
+    {% block header %}
+    <img src="/img/geffenbanner.png" />
+    {% endblock %}
     </header>
+    <div id="navigation">
+        {% block navigation %}
+          <ul>
+            <li><a href= "{{ url_for('index') }}">Overview</a></li>
+            <li><a href= "{{ url_for('faculty') }}">Faculty</a></li>
+            <li><a href= "{{ url_for('curriculum') }}">Curriculum</a></li>
+            <li><a href= "{{ url_for('research')  }}">Research</a></li>
+            <li><a href= "{{ url_for('howtoapply') }}">How To Apply</a></li>
+          </ul> 
+        {% endblock %}
+    </div>
     <div id="main" role="main">
       {% block main %}{% endblock %}
     </div>

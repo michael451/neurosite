@@ -19,6 +19,22 @@ def index():
     """Render website's index page."""
     return render_template('index.html')
 
+@views.route('/faculty')
+def faculty():
+    return render_template('faculty.html')
+
+@views.route('/curriculum')
+def curriculum():
+    return render_template('curriculum.html')
+
+@views.route('/research')
+def research():
+    return render_template('research.html')
+
+@views.route('/howtoapply')
+def howtoapply():
+    return render_template('howtoapply.html')
+
 
 @views.route('/todo/')
 def todo_list():
