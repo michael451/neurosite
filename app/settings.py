@@ -7,4 +7,4 @@ Generate good secret keys:  http://flask.pocoo.org/docs/quickstart/#sessions
     '\xfd{H\xe5<\x95\xf9\xe3\x96.5\xd1\x01O<!\xd5\xa2\xa0\x9fR"\xa1\xa8'
 """
 
-SECRET_KEY = 'this_obviously_should_be_changed_using_os.urandom()'
+SECRET_KEY = '>X\x11H\xf3y\xeb~\xaf\xb8\xab(\xa7\x813;h]\x07@\x00\xb4\xb0\xfe'
