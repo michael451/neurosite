@@ -8,8 +8,11 @@ application.
 from google.appengine.api import mail
 
 from flask import Module, url_for, render_template, request, redirect
+
+"""
 from models import Todo
 from forms import TodoForm, EmailForm
+"""
 
 views = Module(__name__, 'views')
 
@@ -35,7 +38,7 @@ def research():
 def howtoapply():
     return render_template('howtoapply.html')
 
-
+"""
 @views.route('/todo/')
 def todo_list():
     """Simple todo page."""
@@ -96,6 +99,7 @@ def email_status(status):
 def qunit():
     """Render a QUnit page for JavaScript tests."""
     return render_template('test_js.html')
+"""
 
 
 @views.after_request
